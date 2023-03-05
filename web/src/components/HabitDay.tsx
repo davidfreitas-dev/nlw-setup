@@ -1,9 +1,9 @@
 import * as Popover from '@radix-ui/react-popover';
 import clsx from 'clsx';
-import { ProgressBar } from './ProgressBar';
 import dayjs from 'dayjs';
-import { HabitsList } from './HabitsList';
 import { useState } from 'react';
+import { ProgressBar } from './ProgressBar';
+import { HabitsList } from './HabitsList';
 
 interface HabitDayProps {
   date: Date
