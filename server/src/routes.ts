@@ -5,6 +5,12 @@ import { z } from "zod";
 import dayjs from 'dayjs';
 
 export async function appRoutes (app: FastifyInstance) {
+  app.get("/", async () => {
+    return JSON.stringify({ 
+      message: "Hello World!" 
+    })
+  });
+  
   app.post('/habits', async (request) => {
     const createHabitBody = z.object({
       title: z.string(),
